@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'account',
     'django.contrib.postgres',
     'social_django',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,5 @@ AUTHENTICATION_BACKENDs = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
 ]
+
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
