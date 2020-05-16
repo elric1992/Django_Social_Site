@@ -131,9 +131,17 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-AUTHENTICATION_BACKENDs = [
+AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 
 ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
+
+SOCIAL_AUTH_FACEBOOK_KEY = '258074405441576'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'ee2b593d0ccbc435dd5b4d3f0281fa97'
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '967170612867-i9ekqg285cohr63f6cqja0d3c2tqcqu8.apps.googleusercontent.com' # Google Consumer Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'LO5phEkEWPZiXl4HXa2a8lY7' # Google Consumer Secret
