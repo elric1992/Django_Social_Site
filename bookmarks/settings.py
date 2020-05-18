@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account',
     'django.contrib.postgres',
+    'images.apps.ImagesConfig',
 ]
 
 MIDDLEWARE = [
