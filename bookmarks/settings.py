@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'django.contrib.postgres',
     'images.apps.ImagesConfig',
+    'easy_thumbnails',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,5 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
 ]
+
+THUMBNAIL_DEBUG = True
